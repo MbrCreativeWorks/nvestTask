@@ -1,0 +1,138 @@
+@import "~antd/dist/antd.css";
+body {
+  background: #fff7e6;
+}
+input {
+  padding: 4px 10px;
+  outline: none;
+  border: 1px solid #1890ff;
+  background: white;
+}
+.nvestTaskMainHolder {
+  width: 75%;
+  border: 50px solid #1890ff;
+  max-width: 1440px;
+  margin: auto;
+}
+.randomGenBox {
+  width: 300px;
+  height: 300px;
+}
+.ticketGeneratorsHolder {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0;
+}
+.ticketGeneratorInput {
+  padding: 20px 15px;
+  background: #1890ff;
+  width: 350px;
+}
+.ticketsOutputSection {
+  background-color: #1890ff;
+  padding: 30px 20px;
+}
+.ticketsSectionHeading {
+  font-size: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+.ticketCardsHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ticketRangeText {
+  border: 1px solid #fa8f1e;
+  font-size: 16px;
+  color: #fa8f1e;
+  padding: 1px 12px;
+  background-color: #fff7e6;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 4px;
+}
+.randomGeneratorElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  background-color: #1890ff;
+  border-radius: 4px;
+  padding: 20px 10px;
+}
+.generatorHeadingText {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.errorDisplayText {
+  color: white;
+  font-size: 22px;
+  text-align: left;
+  margin-top: 10px;
+}
+.wheelImage {
+  cursor: pointer;
+  animation: spin 0.8s linear infinite;
+}
+.wheelImage:hover {
+  animation: spin 3s linear infinite;
+}
+.userInputHold {
+  background: white;
+  padding: 30px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.colorRed {
+  border: 1px solid red;
+  font-size: 12px;
+  color: red;
+  padding: 1px 12px;
+  background-color: #fff7e6;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 4px;
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 530px) {
+  .randomGeneratorElements {
+    width: 95%;
+    margin: auto;
+  }
+  .ticketGeneratorInput {
+    width: 95%;
+    padding: 20px 8px;
+  }
+  .nvestTaskMainHolder {
+    border: 20px solid #1890ff;
+  }
+  .ticketGeneratorsHolder {
+    padding: 10px 0;
+  }
+  .userInputHold {
+    padding: 15px 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .ticketGeneratorsHolder {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .nvestTaskMainHolder {
+    width: 100%;
+  }
+}
